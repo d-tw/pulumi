@@ -1039,7 +1039,7 @@ async function addTransitivelyReferencedChildResourcesOfComponentResources(
                     // relationships will have been setup.
                     await resource.__data;
                     const children = resource.__childResources;
-                    addTransitivelyReferencedChildResourcesOfComponentResources(children, exclude, result);
+                    await addTransitivelyReferencedChildResourcesOfComponentResources(children, exclude, result);
                 }
             }
         }
